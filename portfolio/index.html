@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taimoor ul Hassan | AI Engineer & Web Developer</title>
+  <meta name="description" content="Taimoor ul Hassan - AI Engineer, AI Agents Expert and Web Developer specializing in AI automation, machine learning, and modern web applications.">
+  <meta name="keywords" content="AI Engineer, AI Agents, Machine Learning, Web Developer, Portfolio, Taimoor ul Hassan, n8n Automation">
+  <meta name="author" content="Taimoor ul Hassan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Taimoor ul Hassan | AI Engineer & Web Developer">
+  <meta property="og:description" content="AI Engineer, AI Agents Expert and Web Developer building intelligent automation and modern web solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (replace with your own icon in assets folder) -->
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR (decorative, optional) ============ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">TH</div>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Taimoor<span class="dot">.</span>dev</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-cta" id="navCta">
+        <a href="#contact">Let's Talk</a>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <canvas id="networkCanvas"></canvas>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="900">
+        <p class="hero-eyebrow">
+          <span class="status-dot"></span> Available for Freelance Work
+        </p>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Taimoor ul Hassan</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          <span id="typed-text"></span><span class="cursor-blink">|</span>
+        </h2>
+
+        <p class="hero-desc">
+          I design and build intelligent AI agents, automation workflows, and modern
+          web applications turning complex ideas into systems that actually save
+          people time.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="#projects" class="btn btn-outline">
+            <i class="fa-solid fa-folder-open"></i> View Projects
+          </a>
+        </div>
+
+        <!-- ============ SOCIAL LINKS AREA (HERO) ============ -->
+        <!--
+          SOCIAL LINKS AREA
+          Replace the "#" in each href below with your real profile URL.
+          Example: href="https://www.facebook.com/yourusername"
+        -->
+        <div class="hero-socials">
+          <a href="https://www.facebook.com/profile.php?id=100073910130187" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/tamimalik_?igsh=MWs0bDk0ZDZmZ3R0Zg%3D%3D&utm_source=qr" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/taimoor-ul-hassan-8823981bb" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com/Taimoor03361094" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+        <!-- ============ END SOCIAL LINKS AREA (HERO) ============ -->
+      </div>
+
+      
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; About Me</p>
+        <h2 class="section-title">Building intelligent systems<br> with purpose.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            I am a passionate AI Engineer and Web Developer specializing in
+            AI-powered automation, intelligent agents, machine learning solutions,
+            and modern web applications. I have experience developing scalable AI
+            workflows, lead generation systems, machine learning models, and
+            business-oriented web platforms.
+          </p>
+          <p>
+            I focus on creating innovative digital solutions that improve
+            productivity and business growth. I continuously explore emerging
+            technologies to build smart and efficient systems for real-world
+            applications.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Multan, Pakistan</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">engrtaimoorulhassan@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value">0303-9152402</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <span class="info-label">Roles</span>
+                <span class="info-value">AI Engineer / AI Agents / Web Dev</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+
+        <!-- ============ ACHIEVEMENTS / COUNTERS ============ -->
+        <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-card">
+            <i class="fa-solid fa-diagram-project stat-icon"></i>
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-face-smile stat-icon"></i>
+            <h3 class="counter" data-target="10">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-robot stat-icon"></i>
+            <h3 class="counter" data-target="10">0</h3>
+            <p>AI Automations</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-clock stat-icon"></i>
+            <h3 class="counter" data-target="200">0</h3>
+            <p>Hours Saved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Skills</p>
+        <h2 class="section-title">Tools &amp; technologies<br> I work with.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <i class="fa-solid fa-brain skill-icon"></i>
+          <h3>Artificial Intelligence</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+          <i class="fa-solid fa-microchip skill-icon"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-robot skill-icon"></i>
+          <h3>AI Agents Development</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fa-solid fa-diagram-project skill-icon"></i>
+          <h3>n8n Automation</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-brands fa-python skill-icon"></i>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <i class="fa-brands fa-js skill-icon"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-brands fa-html5 skill-icon"></i>
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+          <i class="fa-brands fa-css3-alt skill-icon"></i>
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+          <i class="fa-solid fa-globe skill-icon"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+          <i class="fa-solid fa-eye skill-icon"></i>
+          <h3>OCR Systems</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-magnifying-glass-chart skill-icon"></i>
+          <h3>Lead Generation Systems</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fa-solid fa-plug skill-icon"></i>
+          <h3>API Integrations</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-solid fa-comment-dots skill-icon"></i>
+          <h3>Prompt Engineering</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+          <i class="fa-solid fa-database skill-icon"></i>
+          <h3>Database Management</h3>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-brands fa-git-alt skill-icon"></i>
+          <h3>Git &amp; GitHub</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES SECTION ============ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Services</p>
+        <h2 class="section-title">What I can do<br> for your business.</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI Agent Development</h3>
+          <p>Custom AI agents that automate tasks, answer queries, and integrate seamlessly with your existing tools and workflows.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Business Automation</h3>
+          <p>End-to-end automation pipelines using n8n that eliminate repetitive tasks and streamline operations.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Lead Generation Systems</h3>
+          <p>Automated lead scraping, filtering, and enrichment systems that fill your sales pipeline on autopilot.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Responsive, fast, and modern websites &mdash; from portfolios to full e-commerce platforms.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+          <h3>AI Integrations</h3>
+          <p>Integrating AI models and APIs into your apps, websites, and internal tools for smarter operations.</p>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Machine Learning Solutions</h3>
+          <p>Custom ML models for classification, detection, and prediction tailored to your data and goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Projects</p>
+        <h2 class="section-title">Selected work &amp;<br> case studies.</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-image">
+            <!-- Replace images/project1.jpg with your project screenshot -->
+            <img src="images/project1.jpg" alt="Text Detection Machine Learning Project" onerror="this.src='https://placehold.co/600x400/0d1117/8b949e?text=Project+1'">
+          </div>
+          <div class="project-body">
+            <h3>Text Detection Machine Learning Project</h3>
+            <p>Developed an intelligent OCR-based machine learning solution capable of detecting and extracting text from images with high accuracy, trained using advanced OCR techniques and deep learning libraries for robust performance across fonts, qualities, and lighting conditions.</p>
+            <div class="tech-tags">
+              <span>Python</span><span>Machine Learning</span><span>OCR</span><span>OpenCV</span><span>Tesseract OCR</span><span>Deep Learning</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="images/project2.jpg" alt="Library Management System" onerror="this.src='https://placehold.co/600x400/0d1117/8b949e?text=Project+2'">
+          </div>
+          <div class="project-body">
+            <h3>Library Management System</h3>
+            <p>A comprehensive library management application built with Java and NetBeans IDE, streamlining book issuance, returns, inventory management, user tracking, and record maintenance with a focus on data integrity and efficiency.</p>
+            <div class="tech-tags">
+              <span>Java</span><span>NetBeans</span><span>OOP</span><span>Database Management</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="images/project3.jpg" alt="BT Ethnic Store" onerror="this.src='https://placehold.co/600x400/0d1117/8b949e?text=Project+3'">
+          </div>
+          <div class="project-body">
+            <h3>BT Ethnic Store</h3>
+            <p>A fully functional e-commerce platform with a modern customer interface and powerful admin dashboard customers browse, order, and track purchases while admins manage inventory, users, and orders in real time.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="images/project4.jpg" alt="AI Lead Generation Agent" onerror="this.src='https://placehold.co/600x400/0d1117/8b949e?text=Project+4'">
+          </div>
+          <div class="project-body">
+            <h3>AI Lead Generation Agent</h3>
+            <p>An intelligent lead generation automation system using n8n and Apify that collects targeted business leads, extracts relevant data, filters qualified prospects, and stores results directly into Google Sheets cutting manual effort dramatically.</p>
+            <div class="tech-tags">
+              <span>n8n</span><span>Apify</span><span>Google Sheets</span><span>APIs</span><span>Automation</span><span>AI Workflows</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image">
+            <img src="images/project5.jpg" alt="Personal Portfolio Website" onerror="this.src='https://placehold.co/600x400/0d1117/8b949e?text=Project+5'">
+          </div>
+          <div class="project-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A fully responsive personal portfolio website showcasing skills, projects, services, and contact information with modern UI/UX principles, smooth animations, and professional branding.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span><span>UI/UX</span>
+            </div>
+            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE SECTION ============ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Experience</p>
+        <h2 class="section-title">My journey<br> so far.</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Present</span>
+            <h3>AI Engineer</h3>
+            <p>Designing and developing AI-powered systems, intelligent agents, and machine learning models that solve real-world business problems from OCR-based document processing to predictive analytics.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Ongoing</span>
+            <h3>AI Automation Specialist</h3>
+            <p>Building end-to-end automation workflows with n8n and API integrations, enabling businesses to automate lead generation, data collection, and repetitive operational tasks at scale.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Foundation</span>
+            <h3>Web Developer</h3>
+            <p>Developing responsive, modern, and high-performance websites and web applications using HTML, CSS, JavaScript and back-end technologies for businesses and personal brands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS SECTION ============ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Testimonials</p>
+        <h2 class="section-title">What clients<br> say about me.</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;Taimoor delivered an outstanding automation solution that significantly reduced our manual workload. The project was completed professionally and exceeded expectations.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <h4>Ali</h4>
+              <span>AI Automation System</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;Excellent understanding of automation and lead generation processes. The workflow provided accurate data collection and saved countless hours of effort.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">D</div>
+            <div>
+              <h4>Davinder</h4>
+              <span>Lead Generation Workflow</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;The website was modern, responsive, and exactly aligned with our brand identity. Communication and delivery were exceptional throughout the project.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <h4>Monika</h4>
+              <span>Business Website Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;Highly professional and technically skilled. The AI integration improved our operational efficiency and delivered measurable business value.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">C</div>
+            <div>
+              <h4>Chelsea</h4>
+              <span>AI Integration Project</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>&ldquo;A reliable developer who combines creativity with technical expertise. The final product exceeded our expectations and performed flawlessly.&rdquo;</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <h4>Raul</h4>
+              <span>Custom Web Solution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <p class="section-tag"> &mdash; Contact</p>
+        <h2 class="section-title">Let's build something<br> great together.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="0">
+          <p class="contact-lead">
+            Have a project in mind, or just want to discuss AI, automation, or web
+            development? My inbox is always open.
+          </p>
+
+          <div class="contact-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="info-label">Email</span>
+              <a href="mailto:engrtaimoorulhassan@gmail.com">engrtaimoorulhassan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span class="info-label">Phone</span>
+              <a href="tel:+923039152402">0303-9152402</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span class="info-label">Location</span>
+              <span>Multan, Pakistan</span>
+            </div>
+          </div>
+
+          <!--
+            WhatsApp button.
+            Number is set to 03039152402 -> international format 923039152402
+            Update the number in the href below if it changes.
+          -->
+          <a href="https://wa.me/923039152402" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+
+          <!-- ============ SOCIAL LINKS AREA (CONTACT) ============ -->
+          <!-- Replace "#" with your real profile URLs, same as in the hero section -->
+          <div class="contact-socials">
+            <a href="https://www.facebook.com/profile.php?id=100073910130187" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tamimalik_?igsh=MWs0bDk0ZDZmZ3R0Zg%3D%3D&utm_source=qr" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/taimoor-ul-hassan-8823981bb" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/Taimoor03361094" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <!-- ============ END SOCIAL LINKS AREA (CONTACT) ============ -->
+        </div>
+
+        <!--
+          CONTACT FORM
+          ---------------------------------------------------------------
+          METHOD 1 (currently active): FormSubmit -- no signup required.
+            1. Replace "your-email@example.com" in the form action below
+               with: engrtaimoorulhassan@gmail.com
+            2. The first time someone submits the form, FormSubmit will
+               send YOU a confirmation email. Click the link in it to
+               activate the form. After that, all submissions arrive in
+               your inbox automatically.
+
+          METHOD 2: EmailJS (more control, works without page reload).
+            See the "CONTACT FORM SETUP GUIDE" in README.md for full
+            step-by-step instructions on switching to EmailJS.
+          ---------------------------------------------------------------
+        -->
+        <form
+          class="contact-form"
+          id="contactForm"
+          action="https://formsubmit.co/engrtaimoorulhassan@gmail.com"
+          method="POST"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_subject" value="New message from Portfolio Website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="btn-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">Taimoor<span class="dot">.</span>dev</a>
+        <p>AI Engineer &amp; Web Developer crafting intelligent automation and modern digital experiences from Multan, Pakistan.</p>
+
+        <!-- ============ SOCIAL LINKS AREA (FOOTER) ============ -->
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <!-- ============ END SOCIAL LINKS AREA (FOOTER) ============ -->
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Services</h4>
+        <a href="#services">AI Agent Development</a>
+        <a href="#services">Business Automation</a>
+        <a href="#services">Lead Generation Systems</a>
+        <a href="#services">Web Development</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <a href="mailto:engrtaimoorulhassan@gmail.com"><i class="fa-solid fa-envelope"></i> engrtaimoorulhassan@gmail.com</a>
+        <a href="tel:+923039152402"><i class="fa-solid fa-phone"></i> 0303-9152402</a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Multan, Pakistan</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Taimoor ul Hassan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP BUTTON ============ -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- AOS Animation Library JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
